@@ -17,7 +17,12 @@
 
 
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Scanner;
+
 
 class CollectionsPrimer {
     public static boolean isHappyNumber(int n) {
@@ -55,5 +60,30 @@ class CollectionsPrimer {
       //  scanner.close();
         boolean res = isHappyNumber(68);
         System.out.println(res);
+        
+        List<Integer> l=new ArrayList<Integer>();
+        
+        l.add(1);
+        l.add(2);
+        l.add(3);
+        l.add(4);
+        
+        Integer[] a=new Integer[] {1,4,3,2,5};
+        
+        List<Integer> intArr= Arrays.asList(a);
+        
+        
+        System.out.println("The list is:" + intArr);
+        System.out.println("The list is:" + l);
+       
+       
+        System.out.println("The list is:" + intArr.equals(l));
+        
+        
+        HashSet<Integer> hashSet;
+        hashSet=new  HashSet<Integer>(l);
+        hashSet.addAll(intArr);
+        System.out.println("Created HashSet is:"+hashSet);
+        
     }
 }
