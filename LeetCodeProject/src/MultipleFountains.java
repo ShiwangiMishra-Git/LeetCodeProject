@@ -80,7 +80,10 @@ public class MultipleFountains {
 
 			if (!leftdone && !rightdone) {
 				
-				while (!leftdone && left >= 0 && submergedcount < heights.length && remainingfountainsCount > 0
+				while (!leftdone //all covered in the left
+						&& left >= 0 && // same as left done ()may be redundant can use  just one
+						submergedcount < heights.length //all got submerged
+						&& remainingfountainsCount > 0 // fountains got over
 						&& heights[left] <= mapElement.getValue()) {
 					submergedset.add(mapElement.getKey());
 					if(submergedset.add(left))
@@ -94,6 +97,7 @@ public class MultipleFountains {
 					}
 					
 					if (left == 0) {
+						//if i reached till left then left is covered
 						leftdone = true;
 					}
 					left--;
