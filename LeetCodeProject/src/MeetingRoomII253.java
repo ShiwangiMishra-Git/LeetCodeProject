@@ -10,10 +10,14 @@ public class MeetingRoomII253 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub
+				 int meetings[][] = new int[][] {{0,30},{5,10},{15,20}};
+			        System.out.println("meeting room needed are " +
+			        		minMeetingRooms(meetings));
 
 	}
 	
-	 public int minMeetingRooms(int[][] intervals) {
+	 public static int minMeetingRooms(int[][] intervals) {
 	       //sort meetings with start time
 		   //so that while processing we know that if the current meeting start time is later than the root of min heap discussed below than any other meeting coming after this is the list will also be in conflict and would need a new room
 		 

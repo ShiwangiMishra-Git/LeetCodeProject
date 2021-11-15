@@ -27,8 +27,8 @@ public class CoinChangeLC322 {
 	    for(int j=1;j<minCoins[0].length;j++)
 	    {
 	    	minCoins[0][j]=Integer.MAX_VALUE-1;
-	    	//(we are using Integer.MAX_VALUE-1 because in line number 46 if we add 1 it will become Integer.MAX_VALUE which is the max int can hole else it would exceed and overflow will happen)
-	    	//line number 47: Math.min(1+(Integer.MAX_VALUE-1),Integer.MAX_VALUE-1 or any other value) will make sure we store anything lesser than Integer.MAX_VALUE in our minCoins grid for that coin selection
+	    	//(we are using Integer.MAX_VALUE-1 because in line number 50 if we add 1 it will become Integer.MAX_VALUE which is the max int can hole else it would exceed and overflow will happen)
+	    	//line number 50: Math.min(1+(Integer.MAX_VALUE-1),Integer.MAX_VALUE-1 or any other value) will make sure we store anything lesser than Integer.MAX_VALUE in our minCoins grid for that coin selection
 	    }
 	    
 	    //if only one coin is available
