@@ -18,9 +18,14 @@ public class generateParenthesis22 {
     	//Since the depth of this tree is (obviously) at most 2.count, the space complexity is O(count).
     	//time: Since every function call can either add a ( or a ), the time complexity is at most O(2number of function calls) = O(2^(2*count)).
     	
-    	//time complexity= O()
+    	//time complexity= 
+    	/*Since the depth of this tree is (obviously) at most 2.count, the space complexity is O(count).
+
+Since every function call can either add a ( or a ), the time complexity is at most O(2number of function calls) = O(2^(2*count)). where height of tree=2*count, so number of nodes are the  number of calls=2^h= 2^(2*count)
+
+But, since the calls are conditional, the time complexity ends up being less, more specifically, it appears to be around O(2^(2*count)/count), though I'm yet to prove that.*/
     	
-    	//space complexity= O()
+    	//space complexity= O(n) //same for space List<String> result len is the len of valid paranthese
     	
     	//since it is problem of combinations it is example of backtracking problem
     	//best explanation https://youtu.be/s9fokUqJ76A
@@ -29,11 +34,6 @@ public class generateParenthesis22 {
     	//bounding condition to place right para= number of left parentheses > number of right parentheses
     	//when all left para are done, l==2 or n, place remaining right till r==2 or n
     	
-    	/*Since the depth of this tree is (obviously) at most 2.count, the space complexity is O(count).
-
-Since every function call can either add a ( or a ), the time complexity is at most O(2number of function calls) = O(2^(2*count)). where height of tree=2*count, so number of nodes are the  number of calls=2^h= 2^(2*count)
-
-But, since the calls are conditional, the time complexity ends up being less, more specifically, it appears to be around O(2^(2*count)/count), though I'm yet to prove that.*/
     	
     	int l= 0; //number of left para used
     	int r = 0;  //number of right para used
