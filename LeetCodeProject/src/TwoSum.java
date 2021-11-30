@@ -28,7 +28,7 @@ class Solution {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int[] res=new Solution().twoSum(new int[] {2,7,11,15},26);
+		int[] res=new Solution1().twoSum(new int[] {2,7,11,15},26);
 		for(int i=0;i<res.length;i++)
 		{
 			System.out.println(res[i]);
